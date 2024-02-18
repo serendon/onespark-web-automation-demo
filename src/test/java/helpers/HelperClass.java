@@ -11,7 +11,7 @@ public class HelperClass {
 
     private static HelperClass helperClass;
     private static WebDriver driver;
-    public final static int TIMEOUT = 5;
+    public final static int TIMEOUT = 8;
 
     private HelperClass() {
 

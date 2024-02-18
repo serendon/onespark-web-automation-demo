@@ -11,6 +11,7 @@ import io.cucumber.java.en.When;
 
 public class Stepdefs {
     LifeInsuranceQuoteQuickPage lifeInsurancePage = new LifeInsuranceQuoteQuickPage();
+    LifeInsuranceEstimatePage lifeInsuranceEstimatePage = new LifeInsuranceEstimatePage();
 
     @Given("Launch the browser")
     public void launchBrowser() {
@@ -101,5 +102,10 @@ public class Stepdefs {
     @Then("Verify hero image is displayed")
     public void verifyHeroImageIsDisplayed() {
         lifeInsurancePage.verifyHeroImageDisplayed();
+    }
+
+    @Then("Verify the Instant Estimate cover {string} value is {string}")
+    public void verifyTheInstantEstimateCoverValueIs(String cover, String amount) {
+        lifeInsuranceEstimatePage.verifyCoverAmount(cover,amount);
     }
 }

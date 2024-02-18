@@ -82,6 +82,7 @@ public class LifeInsuranceQuoteQuickPage extends ReUsableSteps {
     }
 
     public void verifyUrlPath(String path) {
+        waitForPathLoad(driver,path);
         Assert.assertTrue(driver.getCurrentUrl().contains(path), "User is not navigated to the correct url path");
     }
 
