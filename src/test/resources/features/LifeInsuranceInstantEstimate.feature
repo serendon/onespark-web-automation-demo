@@ -1,6 +1,6 @@
 @LifeInsurance @Regression @InstantEstimate
 
-Feature: One Spark - Life Insurance Quote Quick
+Feature: One Spark - Life Insurance Instant Estimate
 
   Background: User launches the One Spark home page
     Given Launch the browser
