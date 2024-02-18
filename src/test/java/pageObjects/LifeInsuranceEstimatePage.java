@@ -1,14 +1,14 @@
 package pageObjects;
 
 import helpers.HelperClass;
-import helpers.ReUsableSteps;
+import helpers.ReUsableMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LifeInsuranceEstimatePage extends ReUsableSteps {
+public class LifeInsuranceEstimatePage extends ReUsableMethods {
     private final WebDriver driver;
 
     @FindBy(xpath = "//span[contains(text(), 'Life Cover')]/following-sibling::span[contains(@class, 'Input_display')]")

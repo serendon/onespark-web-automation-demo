@@ -1,7 +1,7 @@
 package pageObjects;
 
 import helpers.HelperClass;
-import helpers.ReUsableSteps;
+import helpers.ReUsableMethods;
 import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class LifeInsuranceQuoteQuickPage extends ReUsableSteps {
+public class LifeInsuranceQuoteQuickPage extends ReUsableMethods {
     private final WebDriver driver;
 
     @FindBy(xpath = "(//a[@href='/life' and text()='Life Insurance'])[1]")

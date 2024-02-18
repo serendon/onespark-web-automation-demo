@@ -6,11 +6,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class ReUsableSteps {
+public class ReUsableMethods {
 
     private final WebDriver driver;
 
-    public ReUsableSteps() {
+    public ReUsableMethods() {
         driver = HelperClass.getDriver();
     }
 
